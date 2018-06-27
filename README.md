@@ -1,5 +1,5 @@
 
-## 知识库API
+## 知识图谱API
 
 #### 1. 获取歧义关系（mention -> entity）
 >>> 输入名称(mention)返回对应实体(entity)的列表。如遇到共指问题，请求将会自动对名称(mention)进行共指消解。
@@ -92,12 +92,12 @@ https://api.ownthink.com/kg/eav?entity=entity_name&attribute=attribute_name
 ```
 entity&attribute举例：
 ```
-苹果[蔷薇科苹果属果实]	 颜色
-哈密瓜					   拉丁学名
-哈密瓜				   	   别称
-航母				        地位
-图灵					    主要成就
-图灵奖					   奖励对象
+苹果[蔷薇科苹果属果实]      颜色
+哈密瓜                     拉丁学名
+哈密瓜                     别称
+航母                       地位
+图灵                       主要成就
+图灵奖                     奖励对象
 ```
 请求示例：
 ```
