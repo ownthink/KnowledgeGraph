@@ -9,3 +9,9 @@ print(text)
 knowledge = eval(text) # 转为字典类型
 print(knowledge)
 print(knowledge['data']['avp']) # 打印avp
+
+
+
+
+
+
