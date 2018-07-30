@@ -1,5 +1,11 @@
 
+
 ## 知识图谱API
+
+### 可视化接口
+```
+https://api.ownthink.com/kg/view?entity=周杰伦
+```
 
 #### 1. 获取歧义关系（mention -> entity）
 >>> 输入名称(mention)返回对应实体(entity)的列表。如遇到共指问题，请求将会自动对名称(mention)进行共指消解。
