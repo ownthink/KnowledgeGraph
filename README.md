@@ -107,7 +107,7 @@ entity&attribute举例：
 ```
 请求示例：
 ```
-https://api.ownthink.com/kg/eav?entity=苹果[蔷薇科苹果属果实]&attribute=颜色
+https://api.ownthink.com/kg/eav?entity=苹果&attribute=颜色
 ```
 返回格式说明：
 ```
