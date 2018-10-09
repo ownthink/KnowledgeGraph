@@ -1,17 +1,45 @@
 import requests
 
-url = 'https://api.ownthink.com/kg/knowledge?entity=苹果'      # 知识图谱API
-sess = requests.get(url) # 请求
+def mention2entity(mention):
+	'''
+	提及->实体，根据提及获取歧义关系
+	'''
+	url = 'https://api.ownthink.com/kg/ambiguous?mention={mention}'.format(mention=mention)      # 知识图谱API，歧义关系
+	sess = requests.get(url) # 请求
+	text = sess.text # 获取返回的数据
+	entitys = eval(text) # 转为字典类型
+	return entitys
+	
+def entity2knowledge(entity):
+	'''
+	实体->知识，根据实体获取实体知识
+	'''
+	url = 'https://api.ownthink.com/kg/knowledge?entity={entity}'.format(entity=entity)      # 知识图谱API，实体知识
+	sess = requests.get(url) # 请求
+	text = sess.text # 获取返回的数据
+	knowledge = eval(text) # 转为字典类型
+	return knowledge
 
-text = sess.text # 获取返回的数据
-print(text) 
+def entity_attribute2value(entity, attribute):
+	'''
+	实体&属性->属性值，根据实体、属性获取属性值
+	'''
+	url = 'https://api.ownthink.com/kg/eav?entity={entity}&attribute={attribute}'.format(entity=entity, attribute=attribute)      # 知识图谱API，属性值
+	sess = requests.get(url) # 请求
+	text = sess.text # 获取返回的数据
+	values = eval(text) # 转为字典类型
+	return values
 
-knowledge = eval(text) # 转为字典类型
-print(knowledge)
-print(knowledge['data']['avp']) # 打印avp
-
-
-
-
-
-
+if __name__=='__main__':
+	mention = '红楼梦'
+	entitys = mention2entity(mention)
+	print(entitys)
+	
+	entity = '刘德华'
+	knowledge = entity2knowledge(entity)#根据实体获取知识
+	print(knowledge)
+	
+	entity = '苹果'
+	attribute = '颜色'
+	values = entity_attribute2value(entity, attribute)
+	print(values)

@@ -58,14 +58,14 @@ entity_name举例：
 苹果
 苹果[2007年李玉执导电影]
 苹果公司
-苹果手机
+刘德华
 苏大
 苏州大学
 西红柿
 ```
 请求示例：
 ```
-https://api.ownthink.com/kg/knowledge?entity=苹果
+https://api.ownthink.com/kg/knowledge?entity=刘德华
 ```
 返回格式说明：
 ```
