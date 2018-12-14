@@ -11,7 +11,7 @@ import requests
 def mention2entity(mention):
 	'''
 	 * mention2entity - 提及->实体
-	 * @mention: [in]提及
+	 * @mention: 	[in]提及
 	 * 根据提及获取歧义关系
 	'''
 	url = 'https://api.ownthink.com/kg/ambiguous?mention={mention}'.format(mention=mention)      # 知识图谱API，歧义关系
@@ -23,7 +23,7 @@ def mention2entity(mention):
 def entity2knowledge(entity):
 	'''
 	 * entity2knowledge - 实体->知识
-	 * @entity: [in]实体名
+	 * @entity: 	[in]实体名
 	 * 根据实体获取实体知识
 	'''
 	url = 'https://api.ownthink.com/kg/knowledge?entity={entity}'.format(entity=entity)      # 知识图谱API，实体知识
