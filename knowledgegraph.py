@@ -47,14 +47,14 @@ def entity_attribute2value(entity, attribute):
 
 if __name__=='__main__':
 	mention = '红楼梦'
-	entitys = mention2entity(mention)
+	entitys = mention2entity(mention) # 根据提及获取歧义关系
 	print(entitys)
 	
 	entity = '刘德华'
-	knowledge = entity2knowledge(entity)#根据实体获取知识
+	knowledge = entity2knowledge(entity) # 根据实体获取知识
 	print(knowledge)
 	
 	entity = '苹果'
 	attribute = '颜色'
-	values = entity_attribute2value(entity, attribute)
+	values = entity_attribute2value(entity, attribute) # 根据实体、属性获取属性值
 	print(values)
