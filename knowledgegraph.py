@@ -1,8 +1,18 @@
+'''
+ * Copyright (C) 2017 OwnThink Technologies Inc. 
+ *
+ * Name        : knowledgegraph.py - 知识图谱
+ * Author      : Yener <yener@ownthink.com>
+ * Version     : 0.01
+ * Description : 知识图谱api请求示范
+'''
 import requests
 
 def mention2entity(mention):
 	'''
-	提及->实体，根据提及获取歧义关系
+	 * mention2entity - 提及->实体
+	 * @mention: [in]提及
+	 * 根据提及获取歧义关系
 	'''
 	url = 'https://api.ownthink.com/kg/ambiguous?mention={mention}'.format(mention=mention)      # 知识图谱API，歧义关系
 	sess = requests.get(url) # 请求
@@ -12,7 +22,9 @@ def mention2entity(mention):
 	
 def entity2knowledge(entity):
 	'''
-	实体->知识，根据实体获取实体知识
+	 * entity2knowledge - 实体->知识
+	 * @entity: [in]实体名
+	 * 根据实体获取实体知识
 	'''
 	url = 'https://api.ownthink.com/kg/knowledge?entity={entity}'.format(entity=entity)      # 知识图谱API，实体知识
 	sess = requests.get(url) # 请求
@@ -22,7 +34,10 @@ def entity2knowledge(entity):
 
 def entity_attribute2value(entity, attribute):
 	'''
-	实体&属性->属性值，根据实体、属性获取属性值
+	 * entity_attribute2value - 实体&属性->属性值
+	 * @entity: 	[in]实体名
+	 * @attribute:	[in]属性名
+	 * 根据实体、属性获取属性值
 	'''
 	url = 'https://api.ownthink.com/kg/eav?entity={entity}&attribute={attribute}'.format(entity=entity, attribute=attribute)      # 知识图谱API，属性值
 	sess = requests.get(url) # 请求
