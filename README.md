@@ -2,12 +2,6 @@
 
 ## 知识图谱API
 
-### 思知人工智能群
-```
-QQ群：90780053
-微信群：可联系作者MrYener邀请进群
-```
-
 #### 1. 获取歧义关系（mention -> entity）
 >>> 输入名称(mention)返回对应实体(entity)的列表。如遇到共指问题，请求将会自动对名称(mention)进行共指消解。
 
@@ -117,4 +111,10 @@ https://api.ownthink.com/kg/eav?entity=苹果&attribute=颜色
     "entity_value2",                    // 实体属性所对应的值2
     "entity_value3"                     // 实体属性所对应的值3
 ]
+```
+
+### 思知人工智能群
+```
+QQ群：90780053
+微信群：可联系作者MrYener邀请进群
 ```
