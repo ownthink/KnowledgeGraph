@@ -2,9 +2,10 @@
 
 ## 知识图谱API
 
-### 可视化接口
+### 思知人工智能群
 ```
-https://api.ownthink.com/kg/view?entity=周杰伦
+QQ群：90780053
+微信群：可联系作者MrYener邀请进群
 ```
 
 #### 1. 获取歧义关系（mention -> entity）
