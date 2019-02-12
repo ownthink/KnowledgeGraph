@@ -20,9 +20,8 @@ Soochow University
 西红柿
 ```
 请求示例：
-```
 https://api.ownthink.com/kg/ambiguous?mention=苹果
-```
+
 返回格式说明：
 ```
 [
@@ -59,9 +58,8 @@ entity_name举例：
 西红柿
 ```
 请求示例：
-```
 https://api.ownthink.com/kg/knowledge?entity=刘德华
-```
+
 返回格式说明：
 ```
 {
@@ -101,9 +99,8 @@ entity&attribute举例：
 图灵奖                     奖励对象
 ```
 请求示例：
-```
 https://api.ownthink.com/kg/eav?entity=苹果&attribute=颜色
-```
+
 返回格式说明：
 ```
 [
