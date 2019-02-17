@@ -9,6 +9,13 @@
 
 ![思知机器人](img/思知机器人.jpg)
 
+
+<p>捐赠作者(您的鼓励是作者开源最大的动力！！！)：<a href="https://github.com/ownthink/Jiagu/wiki/donation"target="_blank">捐赠致谢</a> </p>
+
+![收款码](img/收款码.jpg)
+
+
+
 ## 知识图谱API
 
 #### 1. 获取歧义关系（mention -> entity）
