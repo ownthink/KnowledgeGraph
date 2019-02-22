@@ -126,3 +126,7 @@ QQ群：90780053
 ```
 
 
+<p>捐赠作者(您的鼓励是作者开源最大的动力！！！)：<a href="https://github.com/ownthink/Jiagu/wiki/donation"target="_blank">捐赠致谢</a> </p>
+
+![收款码](https://github.com/ownthink/KnowledgeGraph/raw/master/img/%E6%94%B6%E6%AC%BE%E7%A0%81.jpg)
+
