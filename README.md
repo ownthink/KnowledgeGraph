@@ -117,7 +117,7 @@ https://api.ownthink.com/kg/eav?entity=苹果&attribute=颜色
 
 ### 思知人工智能群
 ```
-QQ群：90780053
+知识图谱QQ群：55152968
 微信群：可联系作者MrYener邀请进群
 ```
 
